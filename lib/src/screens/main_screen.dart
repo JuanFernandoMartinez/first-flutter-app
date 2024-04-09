@@ -21,6 +21,7 @@ class MainScreen extends StatelessWidget{
 
       ),
       body: const Center(
+        child: Text(hola mundo)
         child: Text("Hola mundo"),
       )
     );
