@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class MainScreen extends StatelessWidget{
 
-  MainScreen({super.key});
+  const MainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +19,7 @@ class MainScreen extends StatelessWidget{
         backgroundColor: Theme.of(context).colorScheme.primary,
 
       ),
-      body: const Center(
-        child: Text(hola mundo)
-        child: Text("Hola mundo"),
-      )
+      body: const Center(child: Text("hello"))
     );
 
   }}
