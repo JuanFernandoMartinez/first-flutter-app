@@ -19,7 +19,48 @@ class MainScreen extends StatelessWidget{
         backgroundColor: Theme.of(context).colorScheme.primary,
 
       ),
-      body: const Center(child: Text("hello"))
+      body:  Container(
+        color: Colors.red,
+        width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            
+            children: [
+              
+              Image.asset("assets/logo.png", width: 200,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  
+                  const Column(
+                    
+                    children: [
+                      
+                      Icon(Icons.phone, color: Colors.white,),
+                      Text("Call")
+                    ],
+                    
+                  ),
+                  const Column(
+                    children: [
+                      Icon(Icons.route, color: Colors.white,),
+                      Text("Route")
+                    ],
+                  ),
+                  const Column(
+                    children: [
+                      Icon(Icons.share, color: Colors.white,),
+                      Text("Share")
+                    ],
+                  )
+
+                  
+
+                ],
+              )
+            ],
+          ),
+      )
     );
 
   }}
