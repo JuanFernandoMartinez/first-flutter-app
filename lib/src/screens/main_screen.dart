@@ -19,37 +19,51 @@ class MainScreen extends StatelessWidget{
         backgroundColor: Theme.of(context).colorScheme.primary,
 
       ),
-      body:  Container(
-        color: Colors.red,
+      body:  SingleChildScrollView(child: body()));
+
+
+  }
+  
+  Widget body(){
+    return Container(
+        color: Colors.white,
         width: double.infinity,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             
             children: [
               
-              Image.asset("assets/logo.png", width: 200,),
-              Row(
+              Image.asset("assets/logo.png", width: 200, height: 100,),
+              Image.network("https://media.revistagq.com/photos/5f45010acb266484bb785c78/master/pass/dragon-ball-z.jpg", width: 200, height: 100,),
+              Image.asset("assets/logo.png", width: 200, height: 100,),
+              Image.network("https://media.revistagq.com/photos/5f45010acb266484bb785c78/master/pass/dragon-ball-z.jpg", width: 200, height: 100,),
+              Image.asset("assets/logo.png", width: 200, height: 100,),
+              Image.network("https://media.revistagq.com/photos/5f45010acb266484bb785c78/master/pass/dragon-ball-z.jpg", width: 200, height: 100,),
+              Image.asset("assets/logo.png", width: 200, height: 100,),
+              Image.network("https://media.revistagq.com/photos/5f45010acb266484bb785c78/master/pass/dragon-ball-z.jpg", width: 200, height: 100,),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   
-                  const Column(
+                  Column(
                     
                     children: [
                       
-                      Icon(Icons.phone, color: Colors.white,),
+                      Icon(Icons.phone, color: Colors.blue,),
                       Text("Call")
                     ],
                     
                   ),
-                  const Column(
+                  Column(
                     children: [
-                      Icon(Icons.route, color: Colors.white,),
+                      Icon(Icons.route, color: Colors.blue,),
                       Text("Route")
                     ],
                   ),
-                  const Column(
+                  Column(
                     children: [
-                      Icon(Icons.share, color: Colors.white,),
+                      Icon(Icons.share, color: Colors.blue,),
                       Text("Share")
                     ],
                   )
@@ -60,7 +74,6 @@ class MainScreen extends StatelessWidget{
               )
             ],
           ),
-      )
-    );
-
-  }}
+      );
+  }
+  }

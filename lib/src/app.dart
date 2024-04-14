@@ -1,3 +1,4 @@
+import 'package:firstapp/src/screens/login_screen.dart';
 import 'package:firstapp/src/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class App extends StatelessWidget{
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
         useMaterial3: true
       ),
-      home: const MainScreen(),
+      home: const LoginScreen(),
     );
 
   }
